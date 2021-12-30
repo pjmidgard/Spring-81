@@ -265,31 +265,37 @@ class compression:
                                         if   Circle_times2==0:
  
                                                 lenf9=lenf6-16
+                                                if lenf9<=23:
+                                                	T=0
+                                                	C=1
+                                                	
                                                 
-                                                sda9=bin(lenf9)[2:]
-                                                lenf9=len(sda9)
-                                                szx=""
-                                                xc=8-lenf9%8
-                                                z=0
-                                                if xc!=0:
-                                                         if xc!=8:
-                                                         	while z<xc:
-                                                         		szx="0"+szx
-                                                         		z=z+1
-                                                         		
-                                                sda9=szx+sda9
-                                                sda3="00001000"+sda9+sda3
-                                            	                                         
+                                                if lenf9>23:
                                                 
-                                                sda6=sda3[0:8]
-                                                TT = int(sda6, 2)
-                                                sda7=sda3[8:TT+8]
-                                                TTT = int(sda7, 2)
-                                                sda8=sda3[TT+8:TTT+TT+8]
-
-                                                T = int(sda8, 2)
-                                                sda3=sda3[TTT+TT+8:]
-                                                lenf6=len(sda3)
+	                                                sda9=bin(lenf9)[2:]
+	                                                lenf9=len(sda9)
+	                                                szx=""
+	                                                xc=8-lenf9%8
+	                                                z=0
+	                                                if xc!=0:
+	                                                         if xc!=8:
+	                                                         	while z<xc:
+	                                                         		szx="0"+szx
+	                                                         		z=z+1
+	                                                         		
+	                                                sda9=szx+sda9
+	                                                sda3="00001000"+sda9+sda3
+	                                            	                                         
+	                                                
+	                                                sda6=sda3[0:8]
+	                                                TT = int(sda6, 2)
+	                                                sda7=sda3[8:TT+8]
+	                                                TTT = int(sda7, 2)
+	                                                sda8=sda3[TT+8:TTT+TT+8]
+	
+	                                                T = int(sda8, 2)
+	                                                sda3=sda3[TTT+TT+8:]
+	                                                lenf6=len(sda3)
                                                 
 
                                                 
@@ -359,6 +365,8 @@ class compression:
                                     										
                                             if C==1 and T==0:
                                                     sda17=sda3
+                                                    
+                                          
 
 
                                             L=len(sda17)
