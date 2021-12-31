@@ -209,7 +209,7 @@ class compression:
                                 if i==1:
                                     F=0
 
-                                    f=131071
+                                    f=0
                                     C=1
                                     sda20=sda2
                                     if sda20[0:8]=="00000000":
