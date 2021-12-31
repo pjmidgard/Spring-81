@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=0
+                                    F=33554431
 
                                     f=0
                                     C=1
@@ -368,7 +368,7 @@ class compression:
                 
                                                                 T = int(sda8, 2)
                                                                 sda3=sda3[TTT+TT+8:]
-                                                                print(sda3)
+                                                                #print(sda3)
                                                                 lenf6=len(sda3)
 
                                                                 
@@ -474,7 +474,8 @@ class compression:
 
 
                                     L=len(sda17)
-                                                                   
+                                    
+                                                                
                                                                   
                                     n = int(sda17, 2)
                                     qqwslenf=len(sda17)
