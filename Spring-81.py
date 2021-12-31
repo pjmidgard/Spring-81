@@ -9,7 +9,7 @@ lenf=0
 name=""
 szx=""
 wer=""
-namez = input("e, extract? ")
+namez = input("c: compress, e: extract? ")
 
 #@Author Jurijus pacalovas
 class compression:
@@ -206,6 +206,265 @@ class compression:
                                 
                                 block2=0
 
+                                if i==1:
+                                    F=65536
+
+                                    f=0
+                                    C=1
+                                    sda20=sda2
+
+                                    while f!=1:
+
+                                            sda17=""
+                                            sda19=""
+                                            
+                                            sda3=sda2
+                                            Spin=0
+                                            lenf6=len(sda3)
+                                            ei4=0
+                                            ei5=20
+                                            block3=0
+                                            Colaider3=""
+                                            block2=0
+                                            block3=0
+
+                                            szx=""
+
+                                            sda6=""
+
+                                            #Compression
+
+                                            sda9=""
+
+                                            sda10=""
+                                            sda11=""
+                                            sda12=""
+                                            sda13=""
+                                            sda4=""
+                                            sda5=""
+                                            sda6=""
+                                            sda7=""
+                                            sda8=""
+
+
+                                            ei=0
+         
+                                            lenf6F=lenf6
+
+                                            ei=0
+                                            Spin=0
+                                            T7=0
+                                            T10=0
+                                            T9=0
+                                            T12=0
+                                            T22=0
+                                          
+                                            T3=1 
+                                            T4=0
+                                            T5=0
+                                            cc=0
+
+
+                                            
+                                      
+                                            if C==1:
+                                                if   Circle_times2==0:
+
+                                                        
+                                                        sda20="1"+sda20
+
+                                                        T20 = int(sda20, 2)
+                                                
+                                                        sda3=bin(F)[2:]
+
+
+                                                        sda3=bin(F)[2:]
+                                                        lenf=len(sda3)
+                                                        szx=""
+                                                        xc=8-lenf%8
+                                                        z=0
+                                                        if xc!=0:
+                                                                if xc!=8:
+                                                                        while z<xc:
+                                                                                szx="0"+szx
+                                                                                z=z+1
+                                                        sda3=szx+sda3
+
+                                                        lenf6=len(sda3)
+                                                
+                                                        
+
+                                                        
+                                                        
+         
+                                                        lenf9=lenf6-16
+                                                        
+                                                        if lenf6<=23:
+                                                                T=0
+                                                                C=1
+                                                                
+                                                        
+                                                        if lenf6>23:
+
+                                                                
+
+                                                                
+                                                        
+                                                                sda9=bin(lenf9)[2:]
+                                                                lenf9=len(sda9)
+                                                                szx=""
+                                                                xc=8-lenf9%8
+                                                                z=0
+                                                                if xc!=0:
+                                                                         if xc!=8:
+                                                                                while z<xc:
+                                                                                        szx="0"+szx
+                                                                                        z=z+1
+                                                                                        
+                                                                sda9=szx+sda9
+                                                                sda3="00001000"+sda9+sda3
+                                                                #print(len(sda3))
+                                                                                                         
+                                                                
+                                                                sda6=sda3[0:8]
+                                                                TT = int(sda6, 2)
+                                                                sda7=sda3[8:TT+8]
+                                                                TTT = int(sda7, 2)
+                                                                sda8=sda3[TT+8:TTT+TT+8]
+                
+                                                                T = int(sda8, 2)
+                                                                sda3=sda3[TTT+TT+8:]
+                                                                #print(sda3)
+                                                                lenf6=len(sda3)
+
+                                                                
+                                                                
+                                                        
+                                                
+                                                        
+                                                        
+                                                if C==1 and T!=0:
+                                                
+                                                        sda4=sda3[lenf6-11:lenf6-4]
+                                                        sda5=sda3[lenf6-4:lenf6]
+                                                        sda3=sda3[0:lenf6-11]
+
+                                                        lenf6=len(sda3)
+                                                        lenf8=len(sda5)
+                                                        lenf10=len(sda4)
+                                                        
+                                                               
+
+                                                        if lenf6!=0 and lenf8!=0 and lenf10!=0:
+                                                        
+                                                                T7 = int(sda3, 2)
+                                                                T8 = int(sda4, 2)
+                                                                T9 = int(sda5, 2)
+                                                                e=(2**9)-1
+                                                                j=e+(T8*255)
+                                                                T7=T7*j
+                                                                T7=T7+((255*127)*T9)+(T8*255)
+                                               
+                                            sda6=sda4
+                                            sda4=""
+                                              
+                                            #####################################################################################################################################################
+                                                          
+                                            block2=0
+                                            
+                                            Spinh=0              
+                                            block2=0
+                                      
+                                            e4=""
+                                            e4a=""
+                                            e4b=""
+                                            block2=0
+                                            sda5=""
+                                            
+                                            lenf6=len(sda3)
+
+                                            lenf6=len(sda3)
+                                            lenf8=len(sda5)
+                                            lenf10=len(sda4)
+
+                                            if lenf6!=0 and lenf8!=0 and lenf10!=0:
+                                                    sda17=bin(T7)[2:]
+                                             
+                                            sda2=sda17
+                                           
+
+                                            if i==1:
+                                                wer=""
+                                                wer=sda6
+                                                sda4=""
+                                                szx=""
+                                                if C==1 and T!=0:
+                                                        Circle_times2=Circle_times2+1
+
+                                                lenf9=len(sda17)
+                                                #print(Circle_times2)
+                                                
+                                                
+                                                if  Circle_times2==T:
+                                                        if T7!=T20:
+                                                                F=F+1
+                                                                
+                                                                        
+                                                                
+                                                                Circle_times2=0
+                                                                
+                                                                
+                                                        if T7==T20:
+
+                                                                if C==1 and T!=0:
+                                                                        sda17=bin(F)[3:]
+                                                                        lenf=len(sda17)
+                                                                        szx=""
+                                                                        xc=8-lenf%8
+                                                                        z=0
+                                                                        if xc!=0:
+                                                                                if xc!=8:
+                                                                                    while z<xc:
+                                                                                        szx="0"+szx
+                                                                                        z=z+1
+                                                                        sda17=szx+sda17
+
+
+                                                        if T7>T20:
+                                                                                                                   
+                                                                
+                                                                sda17="00000000"+"00000001"+sda20
+                                                            
+                                                  
+
+
+                                                                L=len(sda17)
+                                                                   
+                                                                  
+                                                                n = int(sda17, 2)
+                                                                qqwslenf=len(sda17)
+                                                                qqwslenf=(qqwslenf//8)*2
+                                                                qqwslenf=str(qqwslenf)
+                                                                qqwslenf="%0"+qqwslenf+"x"
+                                                                jl=binascii.unhexlify(qqwslenf % n)
+                                                                sssssw=len(jl)
+
+                                                                szxzzza=""
+                                                                szxzs=""
+                                                                sda2=sda6
+                                                                     
+                                                                with open(nameas, "wb") as f2:
+                                                                    
+                                                                      
+                                                                        f2.write(jl)
+                                                                x2 = time()
+                                                                x3=x2-x
+                                                                xs=float(x3)
+                                                                f=1
+                                                                return print(x3)
+                                                                
+                                                        
+
                                     		
                                
                                         
@@ -265,12 +524,13 @@ class compression:
                                         if   Circle_times2==0:
  
                                                 lenf9=lenf6-16
-                                                if lenf9<=23:
+                                                
+                                                if lenf6<=23:
                                                 	T=0
                                                 	C=1
                                                 	
                                                 
-                                                if lenf9>23:
+                                                if lenf6>23:
                                                 
 	                                                sda9=bin(lenf9)[2:]
 	                                                lenf9=len(sda9)
