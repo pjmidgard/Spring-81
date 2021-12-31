@@ -1,6 +1,6 @@
 # Spring-81
 Spring-81
-Extract:
+Compression
 
 e=(2**9)-1
 
