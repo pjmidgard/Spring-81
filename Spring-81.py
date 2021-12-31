@@ -281,10 +281,10 @@ class compression:
                                                         sda3=bin(F)[2:]
                                                         lenf=len(sda3)
                                                         szx=""
-                                                        xc=8-lenf%8
+                                                        xc=24-lenf%24
                                                         z=0
                                                         if xc!=0:
-                                                                if xc!=8:
+                                                                if xc!=24:
                                                                         while z<xc:
                                                                                 szx="0"+szx
                                                                                 z=z+1
