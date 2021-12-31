@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=33554431
+                                    F=0
 
                                     f=0
                                     C=1
