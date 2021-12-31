@@ -212,6 +212,40 @@ class compression:
                                     f=0
                                     C=1
                                     sda20=sda2
+                                    lenf12=len(sda20)
+                                    if lenf12<=16:
+                                                                sda17="00000000"+"00000001"+sda20
+                                                            
+                                                  
+
+
+                                                                L=len(sda17)
+                                                                   
+                                                                  
+                                                                n = int(sda17, 2)
+                                                                qqwslenf=len(sda17)
+                                                                qqwslenf=(qqwslenf//8)*2
+                                                                qqwslenf=str(qqwslenf)
+                                                                qqwslenf="%0"+qqwslenf+"x"
+                                                                jl=binascii.unhexlify(qqwslenf % n)
+                                                                sssssw=len(jl)
+
+                                                                szxzzza=""
+                                                                szxzs=""
+                                                                sda2=sda6
+                                                                     
+                                                                with open(nameas, "wb") as f2:
+                                                                    
+                                                                      
+                                                                        f2.write(jl)
+                                                                x2 = time()
+                                                                x3=x2-x
+                                                                xs=float(x3)
+                                                                f=1
+                                                                return print(x3)
+                                                                
+                                            
+                                    
 
                                     while f!=1:
 
