@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=0
+                                    F=719646446
 
                                     f=0
                                     C=1
@@ -315,10 +315,10 @@ class compression:
                                                         sda3=bin(F)[2:]
                                                         lenf=len(sda3)
                                                         szx=""
-                                                        xc=24-lenf%24
+                                                        xc=48-lenf%48
                                                         z=0
                                                         if xc!=0:
-                                                                if xc!=24:
+                                                                if xc!=48:
                                                                         while z<xc:
                                                                                 szx="0"+szx
                                                                                 z=z+1
@@ -442,6 +442,8 @@ class compression:
                                                 if  Circle_times2==T:
                                                         if T7!=T20:
                                                                 F=F+1
+                                                            
+                                                                        
                                                                 
                                                                         
                                                                 
@@ -575,8 +577,9 @@ class compression:
 	                                                         		szx="0"+szx
 	                                                         		z=z+1
 	                                                         		
-	                                                sda9=szx+sda9
-	                                                sda3="00001000"+sda9+sda3
+	                                                sda10=szx+sda9
+	                                                print(sda10)
+	                                                sda3="00001000"+sda10+sda3
 	                                            	                                         
 	                                                
 	                                                sda6=sda3[0:8]
