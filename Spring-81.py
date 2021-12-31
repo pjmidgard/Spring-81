@@ -214,7 +214,7 @@ class compression:
                                     sda20=sda2
                                     lenf12=len(sda20)
                                     if lenf12<=16:
-                                                                sda17="00000000"+"00000001"+sda20
+                                                                sda17=sda20
                                                             
                                                   
 
