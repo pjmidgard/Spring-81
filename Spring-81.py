@@ -212,6 +212,9 @@ class compression:
                                     f=0
                                     C=1
                                     sda20=sda2
+                                    if sda20[0:8]=="00000000":
+                                            raise SystemExit
+                                            
                                     lenf12=len(sda20)
                                     if lenf12<=16:
                                                                 sda17=sda20
@@ -305,7 +308,7 @@ class compression:
                                                 if   Circle_times2==0:
 
                                                         
-                                                        sda20="1"+sda20
+                                                        sda20=sda20
 
                                                         T20 = int(sda20, 2)
                                                 
@@ -451,7 +454,7 @@ class compression:
                                                         if T7==T20:
 
                                                                 if C==1 and T!=0:
-                                                                        sda17=bin(F)[3:]
+                                                                        sda17=bin(F)[2:]
                                                                         lenf=len(sda17)
                                                                         szx=""
                                                                         xc=8-lenf%8
@@ -462,40 +465,42 @@ class compression:
                                                                                         szx="0"+szx
                                                                                         z=z+1
                                                                         sda17=szx+sda17
+                                                                        f=1
 
 
                                                         if T7>T20:
                                                                                                                    
                                                                 
-                                                                sda17=sda20
+                                                                sda17="00000000"+"00000000"+sda20
+                                                                f=1
                                                             
                                                   
 
 
-                                                                L=len(sda17)
+                                    L=len(sda17)
                                                                    
                                                                   
-                                                                n = int(sda17, 2)
-                                                                qqwslenf=len(sda17)
-                                                                qqwslenf=(qqwslenf//8)*2
-                                                                qqwslenf=str(qqwslenf)
-                                                                qqwslenf="%0"+qqwslenf+"x"
-                                                                jl=binascii.unhexlify(qqwslenf % n)
-                                                                sssssw=len(jl)
+                                    n = int(sda17, 2)
+                                    qqwslenf=len(sda17)
+                                    qqwslenf=(qqwslenf//8)*2
+                                    qqwslenf=str(qqwslenf)
+                                    qqwslenf="%0"+qqwslenf+"x"
+                                    jl=binascii.unhexlify(qqwslenf % n)
+                                    sssssw=len(jl)
 
-                                                                szxzzza=""
-                                                                szxzs=""
-                                                                sda2=sda6
+                                    szxzzza=""
+                                    szxzs=""
+                                    sda2=sda6
                                                                      
-                                                                with open(nameas, "wb") as f2:
+                                    with open(nameas, "wb") as f2:
                                                                     
                                                                       
-                                                                        f2.write(jl)
-                                                                x2 = time()
-                                                                x3=x2-x
-                                                                xs=float(x3)
-                                                                f=1
-                                                                return print(x3)
+                                        f2.write(jl)
+                                    x2 = time()
+                                    x3=x2-x
+                                    xs=float(x3)
+                                        
+                                    return print(x3)
                                                                 
                                                         
 
@@ -645,7 +650,8 @@ class compression:
                                         if  Circle_times2==T:
                                         
                                             if C==1 and T!=0:
-                                            	sda17=bin(T7)[3:]
+                                                
+                                            	sda17=bin(T7)[2:]
                                             	lenf=len(sda17)
                                             	szx=""
                                             	xc=8-lenf%8
