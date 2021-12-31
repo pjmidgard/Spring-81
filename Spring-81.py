@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=2**32
+                                    F=0
 
                                     f=0
                                     C=1
@@ -368,7 +368,7 @@ class compression:
                 
                                                                 T = int(sda8, 2)
                                                                 sda3=sda3[TTT+TT+8:]
-                                                                #print(sda3)
+                                                                print(sda3)
                                                                 lenf6=len(sda3)
 
                                                                 
@@ -386,7 +386,7 @@ class compression:
                                                         lenf6=len(sda3)
                                                         lenf8=len(sda5)
                                                         lenf10=len(sda4)
-                                                        print(sda3)
+                                                        #print(sda3)
                                                                
 
                                                         if lenf6!=0 and lenf8!=0 and lenf10!=0:
@@ -438,9 +438,11 @@ class compression:
                                                 #print(Circle_times2)
                                                 
                                                 
+                                                
                                                 if  Circle_times2==T:
                                                         if T7!=T20:
                                                                 F=F+1
+                                                               
                                                             
                                                                         
                                                                 
