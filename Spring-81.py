@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=0
+                                    F=2**32
 
                                     f=0
                                     C=1
@@ -386,7 +386,7 @@ class compression:
                                                         lenf6=len(sda3)
                                                         lenf8=len(sda5)
                                                         lenf10=len(sda4)
-                                                        
+                                                        print(sda3)
                                                                
 
                                                         if lenf6!=0 and lenf8!=0 and lenf10!=0:
@@ -421,8 +421,7 @@ class compression:
                                             lenf8=len(sda5)
                                             lenf10=len(sda4)
 
-                                            if lenf6!=0 and lenf8!=0 and lenf10!=0:
-                                                    sda17=bin(T7)[2:]
+                                            sda17=bin(T7)[2:]
                                              
                                             sda2=sda17
                                            
@@ -578,7 +577,7 @@ class compression:
 	                                                         		z=z+1
 	                                                         		
 	                                                sda10=szx+sda9
-	                                                print(sda10)
+	                                                #print(sda10)
 	                                                sda3="00001000"+sda10+sda3
 	                                            	                                         
 	                                                
