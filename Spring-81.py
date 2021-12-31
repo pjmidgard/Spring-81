@@ -467,7 +467,7 @@ class compression:
                                                         if T7>T20:
                                                                                                                    
                                                                 
-                                                                sda17="00000000"+"00000001"+sda20
+                                                                sda17=sda20
                                                             
                                                   
 
