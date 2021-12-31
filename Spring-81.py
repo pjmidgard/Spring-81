@@ -307,9 +307,6 @@ class compression:
                                             if C==1:
                                                 if   Circle_times2==0:
 
-                                                        
-                                                        sda20=sda20
-
                                                         T20 = int(sda20, 2)
                                                 
                                                         sda3=bin(F)[2:]
