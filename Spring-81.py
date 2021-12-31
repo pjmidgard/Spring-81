@@ -207,7 +207,7 @@ class compression:
                                 block2=0
 
                                 if i==1:
-                                    F=719646446
+                                    F=0
 
                                     f=0
                                     C=1
@@ -315,10 +315,10 @@ class compression:
                                                         sda3=bin(F)[2:]
                                                         lenf=len(sda3)
                                                         szx=""
-                                                        xc=48-lenf%48
+                                                        xc=8-lenf%8
                                                         z=0
                                                         if xc!=0:
-                                                                if xc!=48:
+                                                                if xc!=8:
                                                                         while z<xc:
                                                                                 szx="0"+szx
                                                                                 z=z+1
