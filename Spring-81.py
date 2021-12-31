@@ -465,11 +465,7 @@ class compression:
                                                                         f=1
 
 
-                                                        if T7>T20:
-                                                                                                                   
-                                                                
-                                                                sda17="00000000"+"00000000"+sda20
-                                                                f=1
+                                                        
                                                             
                                                   
 
@@ -659,13 +655,7 @@ class compression:
                                             	            	szx="0"+szx
                                             	            	z=z+1
                                             	sda17=szx+sda17
-                                    										
-                                            if C==1 and T==0:
-                                                    sda17=sda3
-                                                    
-                                          
-
-
+                                    	
                                             L=len(sda17)
                                            
                                           
