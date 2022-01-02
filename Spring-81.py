@@ -395,25 +395,7 @@ class compression:
                                                         while z<xc:
                                                          	szx4="0"+szx4
                                                          	z=z+1
-
-                                    
-                                    if ccc==1 or ccc==2:
-                                            
-                                            Spin_Save=bin(Spin)[2:]
-                                            hr=4
-                                            
-                                        	
-                                            lenf=len(Spin_Save)
-                                            szx14=""
-                                            xc=hr-lenf%hr
-                                            z=0
-                                            if xc!=0:
-                                                if xc!=hr:
-                                                        while z<xc:
-                                                         	szx14="0"+szx14
-                                                         	z=z+1
- 
-                                            
+     
                                     if ccc==1:
                                            
                                             sda17=sda17+szx4+sda23+bit
