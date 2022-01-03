@@ -586,6 +586,7 @@ class compression:
                                         T8 = int(sda4, 2)
                                         T9 = int(sda5, 2)
                                         e=(2**7000)-1
+                                        j=e+T8
                                         T7=T7*j
                                         T7=T7+T9
                                        
